@@ -1,153 +1,152 @@
-# Guide d'utilisation du launcher
+# Launcher User Guide
 
-## 1. Installation
+## 1. installation
 
 ___
 
-### 1.1. Pré-requis
+### 1.1. Prerequisites
 
-#### - Pour commecer il est impératif de faire un fork du projet. **Si vous ne le faites pas vous ne respecterez pas les conditions d'utilisation.**
+#### - To start it is imperative to make a fork of the project. **If you don't do it you will not respect the terms of use.**
 
-#### - Il faut installer les logiciels suivants pour pouvoir commencer à editer le launcher :
+#### - You need to install the following software to start editing the launcher:
 
 - [Github Desktop](https://desktop.github.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
-- [Node.js](https://nodejs.org/) **⚠️ Prendre la version LTS**
+- [Node.js](https://nodejs.org/) **⚠️ Take the LTS version**
 
-#### - Un serveur web sous apache et php fonctionnel ⚠️ **Obligatoire pour démarrer le launcher**
-
-___
-
-### 1.2. Faire un Fork du projet :
-
-Pour commencer vous devez faire un fork du projet pour ce faire rendez vous [ici](https://github.com/luuxis/Selvania-Launcher).
-
-- Ensuite cliquez sur "Fork" :
-
-![Créer un fork](./images/Fork.png)
-
-- Entrez les informations voulues et cliquez sur "Create fork" et décochez bien "copy master branch only" :
-
-![Entrer les infos de votre fork](./images/Fork-info.png)
+#### - A working apache and php web server ⚠️ **Required to start the launcher**
 
 ___
 
-### 1.3. Faire un clone : 
+### 1.2 Fork the project:
 
-#### **⚠️ Veuillez vous connecter à votre compte github sur github desktop avant de continuer !** Pour ce faire cliquez sur le bouton suivant :
+To begin you must make a fork of the project to do this go [here](https://github.com/luuxis/Selvania-Launcher).
 
-![Se connecter à discord](./images/Login-github.png)
+- Then click on "Fork" :
 
-- Vous devriez arriver sur cette page qui devrait ouvrir votre navigateur pour vous connecter automatiquement une fois l'oppération terminée cliquez sur "finish" :
+![Create a fork](./images/Fork.png)
 
-![Se connecter à github](./images/githublogin.png)
+- Enter the desired information and click on "Create fork" and uncheck "copy master branch only" :
 
-- Une fois connecté vous devriez tomber sur cette page Cliquez sur votre fork qui devrait apparaitre sur la liste de droite puis cliquez sur "clone" :
-
-![Cloner le projet depuis Github](./images/openfork.png)
-
-- Choisissez bien l'endroit ou vous souhaitez placer le projet sur votre ordinateur et cliquez sur "Clone" :
-
-![Choisir l'emplacement du projet](./images/clone_path.png)
-
-- Patientez quelques secondes le temps de télécharger le projet sur votre ordinateur.
-
-![Clonage en cours...](./images/loading.png)
-
-- Une fois le projet téléchargé, cliquez sur "For my own purposes" puis sur "Continue" :
-
-![Choisisez l'usage](./images/usage.png)
-
-- Pour finir cliquez sur "Open in Visual Studio Code" :
-
-![Ouvrez le projet dans votre IDE](./images/openvisual.png)
-
-- Vous pouvez maintenant commencer à editer le launcher !
-
-![Vois voilà prêt](./images/visualstudiofirstopen.png)
-
-___
-## 2. Environnement
-
-### 2.1. Mise en place du terminal
-
-- Pour continuer nous allons ouvrir le terminal pour ce faire cliquez sur "Terminal" -> "Nouveau terminal" :
-
-![Ouvrir le terminal](./images/newtermianl.png)
-
-- Une fois le terminal ouvert, Cliquez sur la petite flèche à coté du + puis sur "Sélectionner le profile par défault" :
-
-![Sélectionner le profile par défault](./images/profilecmd.png)
-
-- Une fenêtre s'ouvre, cliquez sur "Command Prompt" :
-
-![Sélectionner le profile par défault](./images/cmd.png)
+![Enter the info of your fork](./images/Fork-info.png)
 
 ___
 
-### 2.2. Installation des derniers modules
+### 1.3. Make a clone : 
 
-- Une fois le terminal ouvert il faut installer les modules du projet pour ce faire veuillez exécuter la commande suivante :
+#### **⚠️ Please log in to your github account on github desktop before proceeding!** To do this click on the following button:
+
+![Connect to discord](./images/Login-github.png)
+
+- You should arrive on this page which should open your browser to connect you automatically once the operation is finished click on "finish":
+
+![Connect to github](./images/githublogin.png)
+
+- Once connected you should see this page Click on your fork which should appear on the list on the right then click on "clone" :
+
+![Clone the project from Github](./images/openfork.png)
+
+- Choose well the place where you want to put the project on your computer and click on "Clone" :
+
+![Choose the location of the project](./images/clone_path.png)
+
+- Wait a few seconds while the project is downloaded to your computer.
+
+![Cloning in progress...](./images/loading.png)
+
+- Once the project is downloaded, click on "For my own purposes" and then on "Continue" :
+
+![Choose the usage](./images/usage.png)
+
+- Finally click on "Open in Visual Studio Code" :
+
+![Open the project in your IDE](./images/openvisual.png)
+
+- Now you can start editing the launcher!
+
+![See it ready](./images/visualstudiofirstopen.png)
+
+___
+## 2. Environment
+
+### 2.1. Setting up the terminal
+
+- To continue we will open the terminal to do this click on "Terminal" -> "New terminal" :
+
+![Open the terminal](./images/newtermianl.png)
+
+- Once the terminal is open, click on the small arrow next to the + and then on "Select default profile":
+
+![Select default profile](./images/profilecmd.png)
+
+- A window opens, click on "Command Prompt" :
+
+![Select default profile](./images/cmd.png)
+
+___
+
+### 2.2 Installation of the last modules
+
+- Once the terminal is open, you need to install the project modules. To do this, run the following command:
 
 ```console
-  npm install               // Installation des modules
+  npm install // Installing the modules
 ```
 
-- Pour vérifer que tout fonctionne bien veuillez exécuter la commande suivante :
+- To check that everything is working properly, run the following command:
 
 ```console
-  npm start                 // Lance le launcher (veuillez vérifiez que le launcher se lannce bien) 
+  npm start // Run the launcher (please make sure the launcher is running) 
 ```
 
-- Pour information : Voici les commandes disponible
+- For your information: Here are the available commands
 ```console
-  npm run dev               // Démarrer la version de développement du launcher
-  npm start                 // Lance le launcher
+  npm run dev // Start the development version of the launcher
+  npm start // Start the launcher
 ```
+___
+### 2.3. Details
+
+- If you know a little bit about it, you're probably wondering "why didn't they put npm run build in the available commands?" It's simple, to compile the launcher you have to go through github (we'll explain the procedure below in the documentation).
+
+- I advise you to activate the automatic saving to do this click on "File" -> "Automatic saving" by running npm run dev this will have the effect of restarting the launcher at each modification to check if what you have done works and it will also avoid losing the modifications if visual studio crashes for example.
 
 ___
-### 2.3. Précisions
+## 3. The web server
 
-- Si vous vous y connaissez un peu vous vous demandez sûrement "pourquoi ils n'ont pas mis npm run build dans les commandes disponibles ?" C'est simple pour compiler le launcher vous devez passer aubligatoirement par github (nous allons vous expliquer la procédure à suivre plus bas dans la documentation).
+So that the launcher can function it is necessary to set up a functional web server under apache and php.
 
-- Je vous conseille d'activer l'enregistrement automatique pour ce faire cliquez sur "Fichier" -> "Enregistrement automatique" en exécutant npm run dev cela aura pour effet de relancer le launcher à chaque modification pour vérifier si ce que vous avez fait fonctionne et cela permtra également à éviter de perdre les modifications si visual studio crash par exemple.
-
-___
-## 3. Le serveur web
-
-Pour que le launcher puisse fonctionner il faut mettre en place un serveur web sous apache et php fonctionnel.
-
-Cette étape est importante car elle est essentielle pour que le launcher puisse fonctionner.
-Pour ce faire vous devez poséder soit une machine chez vous qui tourne 24h/24 pour héberger le serveur web, soit un serveur dédié (un serveur que vous louez chez un hébergeur).
+This step is important because it is essential for the launcher to work.
+To do this you must have either a machine at home that runs 24/24 to host the web server, or a dedicated server (a server that you rent from a host).
 ___
 
-## ⚠️ ATTENTION !
-**Cette partie est compliquée nous vous conseillons de savoir ce que vous faites avant de continuer !**
+## ⚠️ ATTENTION!
+**This part is complicated we advise you to know what you are doing before continuing!**
 
-**Si vous n'avez pas les compétences nécessaires pour mettre en place le serveur web le configurer ou si vous n'avez pas de machine sous la main pouvant tourner 24h/24 pour héberger votre serveur web nous vous conseillons la solution facile et clée en main de luuxis spécialement faite pour le launcher plus d'informations [ici](https://dev.luuxis.fr/) .**
+**If you don't have the necessary skills to set up the web server and configure it or if you don't have a machine at hand that can run 24 hours a day to host your web server we advise you to use the easy and turnkey solution of luuxis specially made for the launcher more information [here](https://dev.luuxis.fr/) .**
 
-Avant de continuer nous considèrerons que : 
+Before continuing we will consider that : 
 
-- Vous avez un serveur local ou distant sous windows ou linux
-- Que vous savez vous connecter en ssh à votre serveur
-- Que vous connaissez l'adresse IP locale et publique de votre serveur
-- Que vous savez comment faire une redirection de port sur votre serveur
-- Que vous save mettre des fichiers sur votre serveur
+- You have a local or remote server under windows or linux
+- That you know how to connect with ssh to your server
+- That you know the local and public IP address of your server
+- That you know how to do a port forwarding on your server
+- That you know how to put files on your server
 
-Si vous n'avez / ne savez pas faire les choses précédentes nous vous invitons à chercher sur internet. Aucun support ne sera fourni pour ceci.
+If you don't have / don't know how to do any of the above we invite you to search the internet. No support will be provided for this.
 
 ___
-### 3.1. Installation du serveur web sous linux
+### 3.1 Installing the web server under linux
 
-#### 3.1.1. Pré-requis
+#### 3.1.1. Prerequisites
 
-Pour suivre ce guide, vous avez besoin des choses suivantes :
-- Un serveur sous linux (ubuntu, debian, etc.)
-- Avoir un accès direct ou en ssh à votre serveur
+To follow this guide, you need the following things:
+- A linux server (ubuntu, debian, etc.)
+- Have direct or ssh access to your server
 ___
-#### 3.1.2. Installer Apache
+#### 3.1.2 Installing Apache
 
-- Connectez-vous en SSH à votre serveur, puis mettez à jour vos packages.
+- Connect with SSH to your server, then update your packages.
 
 ```console
 $ sudo apt update && sudo apt -y upgrade              # Debian/Ubuntu/Linux Mint
@@ -157,7 +156,7 @@ $ sudo dnf -y update                                  # Fedora
 $ sudo pacman -Syu                                    # Arch Linux
 ```
 
-- Ensuite, exécutez la commande ci-dessous pour installer le serveur Web Apache.
+- Next, run the command below to install the Apache web server.
 
 ```console
 $ sudo apt install -y apache2                         # Debian/Ubuntu/Linux Mint
@@ -167,30 +166,30 @@ $ sudo dnf install httpd-manual                       # Fedora
 $ sudo pacman -S apache                               # Arch Linux
 ```
 
-- Visitez l'URL ci-dessous sur un navigateur Web et remplacez 192.0.0.1 par l'adresse IP de votre serveur. (nous suposons que votre serveur est en local si non vous devez entrer l'aderesse IP de votre serveur distant que vous devez déjà connaitre)
+- Visit the URL below in a web browser and replace 192.0.0.1 with the IP address of your server. (we assume your server is local if not you must enter the IP address of your remote server which you should already know)
 ```console
 http://192.0.0.1/
 ```
 
-Vous devriez voir la page Web Apache par défaut comme indiqué ci-dessous. Bravo ! Vous avez réussi à installer Apache !
+You should see the default Apache web page as shown below. Congratulations! You have successfully installed Apache!
 
-![Sélectionner le profile par défault](./images/default_apache_web_page.png)
+![Select default profile](./images/default_apache_web_page.png)
 
-Après avoir configuré le serveur Web nous allons devoir installer PHP.
+After configuring the web server we will need to install PHP.
 ___
-#### 3.1.3. Installer PHP
+#### 3.1.3 Installing PHP
 
-- Dans cette étape, vous allez installer le package PHP. Pour ce faire exécutez la commande ci-dessous.
+- In this step you will install the PHP package. To do this run the command below.
 
 ```console
-$ sudo apt install -y php                             # Debian/Ubuntu/Linux Mint
+$ udo apt install -y php                              # Debian/Ubuntu/Linux Mint
 
 $ sudo dnf install php                                # Fedora
 
 $ sudo pacman -S php                                  # Arch Linux
 ```
 
-- Redémarrez le serveur Web Apache pour charger PHP.
+- Restart the Apache web server to load PHP.
 
 ```console
 $ sudo systemctl restart apache2                      # Debian/Ubuntu
@@ -201,7 +200,7 @@ $ sudo systemctl restart httpd.service                # Fedora
 
 $ sudo systemctl restart httpd                        # Arch Linux
 ```
-- Vous pouvez toujours vérifier que apache est fonctionnel en vérifaint son statut en exécutant la commande ci-dessous. (ctrl + c pour quitter)
+- You can always verify that apache is running by checking its status by running the command below. (ctrl + c to exit)
 
 
 ```console
@@ -212,7 +211,7 @@ $ sudo systemctl status httpd.service                 # Fedora
 $ systemctl status httpd                              # Arch Linux
 ```
 
-- Pour tester PHP, créez un fichier info.php dans le répertoire racine de votre serveur Web.
+- To test PHP, create an info.php file in the root directory of your web server.
 
 ```console
 $ sudo nano /var/www/html/info.php                    # Debian/Ubuntu/Linux Mint
@@ -221,87 +220,89 @@ $ sudo dnf -y install nano                            # Fedora/Arch Linux
 $ sudo nano /var/www/html/info.php                    # Fedora/Arch Linux
 ```
 
-- Ensuite, entrez les informations ci-dessous dans le fichier.
+- Then enter the following information in the file.
 
 ```php
 <?php
 phpinfo();
 ?>
 ```
-- Enregistrez et fermez le fichier en appuyant sur CTRL + X, puis Y et ENTER. Ensuite, dans un navigateur Web, Visitez l'URL ci-dessous sur un navigateur Web et remplacez 192.0.0.1 par l'adresse IP de votre serveur. (nous suposons que votre serveur est en local si non vous devez entrer l'aderesse IP de votre serveur distant que vous devez déjà connaitre)
+- Save and close the file by pressing CTRL + X, then Y and ENTER. Next, in a web browser, Visit the URL below on a web browser and replace 192.0.0.1 with the IP address of your server. (we assume your server is local if not you must enter the IP address of your remote server which you should already know)
 
 ```console
 http://192.0.0.1/info.php
 ```	
 
-Vous devriez obtenir une page PHP détaillée comme indiqué ci-dessous.
+You should get a detailed PHP page as shown below.
 
-![Sélectionner le profile par défault](./images/php_info_page.png)
+![Select default profile](./images/php_info_page.png)
 
-Bravo ! Vous avez réussi à installer PHP !
+Congratulations ! You have successfully installed PHP!
 ___
 
-### 3.2. Installation du serveur web sous windows
+### 3.2 Installing the web server under Windows
 
-#### 3.2.1. Pré-requis
+#### 3.2.1. Prerequisites
 
-Pour suivre ce guide, vous avez besoin des choses suivantes :
-- Un serveur / ordinateur sous windows (Windows 11, Windows 10, etc.)
-- Avoir un accès direct ou à distance à votre serveur / ordinateur
+To follow this guide, you need the following things:
+- A server / computer running Windows (Windows 11, Windows 10, etc.)
+- Have direct or remote access to your server/computer
 
 ___
-#### 3.2.2. Installer Apache
+#### 3.2.2 Installing Apache
 
-Le premier obstacle à l'installation d'Apache sur Windows est que vous ne pouvez pas télécharger les fichiers binaires d'installation directement depuis apache.org. Vous devez cloner et compiler vous-même le code source du serveur HTTP Apache ou télécharger le support d'installation Apache 2.4 d'un tiers.
+The first obstacle to installing Apache on Windows is that you cannot download the installation binaries directly from apache.org. You have to clone and compile the Apache HTTP Server source code yourself or download the Apache 2.4 installation media from a third party.
 
-- Un téléchargement tiers des fichiers binaires est certainement le moyen le plus simple de procéder. C'est pour cela que je vous invite à vous rendre sur le site [apachelounge.org](https://www.apachelounge.com/download/) et à cliquer sur le lien entouré si dessous (2) pour télécharger le support d'installation Apache 2.4.
-Vous devez également télécharger Visual C++ Redistributable Visual Studio 2015-2022 pour cela cliquez sur le lien entouré en rouge (1). Installer Visual C++ Redistributable Visual Studio 2015-2022 pour cela exécutez le programme téléchargé, acceptez les termes d'utilisation et cliquez sur le bouton Installer. Windows vous demander les permissions administrateur cliquez sur le bouton OK.
+- A third party download of the binaries is certainly the easiest way to go. That's why I invite you to go to [apachelounge.org](https://www.apachelounge.com/download/) and click on the circled link below (2) to download the Apache 2.4 installation media.
+You also need to download Visual C++ Redistributable Visual Studio 2015-2022 for that click on the link circled in red (1). Install Visual C++ Redistributable Visual Studio 2015-2022 for that run the downloaded program, accept the terms of use and click the Install button. Windows will ask you for the administrator permissions and click on the OK button.
 
-![Sélectionner le profile par défault](./images/apachewindowsdownload.png)
-![Sélectionner le profile par défault](./images/visualc++.png)
+![Select default profile](./images/apachewindowsdownload.png)
+![Select default profile](./images/visualc++.png)
 
-- Pour commencer veuillez extraire le fichier zip téléchargé.
-- Déplacer le dossier Apache24 dans le répertoire racine ("C:\ ") de votre ordinateur.
-- Allez dans le répertoire "C:\Apache24\conf" et ouvrez le fichier "httpd.conf".
-- Recherchez (ctrl + f) la ligne suivante : "#ServerName www.example.com:80"
-- Retirez le # et sauvegardez le fichier.
-- Faites Win + r et entrez ceci "C:\Windows\System32\systempropertiesadvanced.exe" et cliquez sur entrer.
-- Cliquez dans "Variable d'environnement..." et sélectionnez "Path" cliquez sur "modifier" puis cliquez sur "Nouveau" et entrez "C:\Apache24\bin" et cliquez sur OK.
-- Redémarrez votre ordinateur.
-- Ouvrez l'invite de commande (windows + R) et entrez cmd puis cliquez sur Ctrl + Shift + entrée windows va vous demander les droit administrateurs cliquez sur "Ok".
-- Entrez les commandes suivante :
+- To start please extract the downloaded zip file.
+- Move the Apache24 folder to the root directory ("C:\") of your computer.
+- Go to the directory "C:\Apache24\conf" and open the file "httpd.conf".
+- Look for (ctrl + f) the following line: "#ServerName www.example.com:80"
+- Remove the # and save the file.
+- Do Win + r and enter this "C:\Windows\System32\systempropertiesadvanced.exe" and click on enter.
+- Click on "Environment Variable..." and select "Path" click on "modify" then click on "New" and enter "C:\Apache24\bin" and click on OK.
+- Restart your computer.
+- Open the command prompt (windows + R) and enter cmd then click on Ctrl + Shift + enter windows will ask you for the administrator rights click on "Ok".
+- Enter the following commands:
 
 ```console
-> path                   # Plein de choses vont s'afficher ce sont les variables d'environnement si vous voyez "C:\Apache24\bin" c'est que vous avez bien fait l'étape précédente.
-> httpd -k install        # Installation du serveur web Apache
-> httpd -k start          # Démarrage du serveur web Apache
+> path                                                # A lot of things will be displayed, these are the environment variables, if you see "C:Apache24bin" you have done the previous step.
+> httpd -k install                                    # Installing the Apache web server
+> httpd -k start                                      # Starting the Apache web server
 ```
-Si des erreurs apparaissent, essayez de les corriger en cherchant sur internet. Pour vérifier que apache fonctionne bien faites Ctrl + shift + echap et allez dans l'onglet services vous devriez voir apache 2.4
+If errors appear, try to correct them by searching the internet. To verify that Apache is working properly, press Ctrl + shift + escape and go to the services tab and you should see Apache 2.4
 
-- Rendez vous à l'adresse http://localhost:80 pour vérifier l'installation.
-- Si vous voyez écrit "It works!" c'est que Apache est installé et fonctionnel.
+- Go to http://localhost:80 to check the installation.
+- If you see "It works!" it means that Apache is installed and working.
 
 ___
-#### 1.2.3. Installer PHP
 
-- Pour installer PHP rendez vous à l'adresse [https://windows.php.net/download/](https://windows.php.net/download/)
-- Cliquez sur le lien "Zip" Thread safe pour télécharger le fichier zip
-- Pour commencer veuillez extraire le fichier zip téléchargé.
-- Une extrait renommer le dossier en "php"
-- Déplacez le dossier "php" dans le répertoire racine ("C:\ ") de votre ordinateur.
-- Faites Win + r et entrez ceci "C:\Windows\System32\systempropertiesadvanced.exe" et cliquez sur entrer.
-- Cliquez dans "Variable d'environnement..." et sélectionnez "Path" cliquez sur "modifier" puis cliquez sur "Nouveau" et entrez "C:\php" et cliquez sur OK.
-- Redémarrez votre ordinateur.
-- Entrez les commandes suivante :
+
+#### 1.2.3 Installing PHP
+
+- To install PHP go to [https://windows.php.net/download/](https://windows.php.net/download/)
+- Click on the link "Zip" Thread safe to download the zip file
+- To start please extract the downloaded zip file.
+- One extract rename the folder to "php".
+- Move the "php" folder to the root directory ("C:\") of your computer.
+- Make Win + r and enter this "C:\Windows\System32\systempropertiesadvanced.exe" and click on enter.
+- Click on "Environment Variable..." and select "Path" click on "modify" then click on "New" and enter "C:\php" and click on OK.
+- Restart your computer.
+- Enter the following commands:
 
 ```console
-> path                   # Plein de choses vont s'afficher ce sont les variables d'environnement si vous voyez "C:\php" c'est que vous avez bien fait l'étape précédente.
-> php -v                 # Vérifier la version de PHP
+> path                                                # A lot of things will show up that are environment variables if you see "C:\php" then you did the previous step.
+> php -v                                              # Check the PHP version
 ```
-Si php -v fonctionne vous avez bien installé PHP. Maintenant il faut mettre en relalation php avec Apache.
+If php -v works you have installed PHP. Now you have to connect php with Apache.
 
-- Allez dans le répertoire "C:\Apache24\conf" et ouvrez le fichier "httpd.conf".
-- Rendez vous à la fin du documet et ajoutez les liens suivantes :
+- Go to the directory "C:Apache24" and open the file "httpd.conf".
+- Go to the end of the document and add the following links:
 
 ```console
 LoadModule php_module "C:\php\php8apache2_4.dll"
@@ -309,20 +310,20 @@ AddHandler application/x-httpd-php .php
 PHPIniDir "C:\php"
 ```
 
-- Sauvegardez le fichier.
-- Rendez vous dans le répertoire "C:\php" vous verrez deux fichiers "php.ini-development" et "php.ini-production".
-- Copiez et collez le fichier "php.ini-development" dans le répertoire "C:\php"
-- Renommez le fichier "php - Copie.ini-development" en "php.ini"
-- Ouvrez l'invite de commande (windows + R) et entrez cmd puis cliquez sur Ctrl + Shift + entrée windows va vous demander les droit administrateurs cliquez sur "Ok".
-- Entrez les commandes suivante :
+- Save the file.
+- Go to the directory "C:\php" you will see two files "php.ini-development" and "php.ini-production".
+- Copy and paste the file "php.ini-development" in the "C:\php" directory
+- Rename the file "php - Copy.ini-development" to "php.ini".
+- Open the command prompt (windows + R) and enter cmd then click on Ctrl + Shift + enter windows will ask you for the administrator rights click on "Ok".
+- Enter the following commands:
 
 ```console
-> httpd -t              # Vérifier la configuration du serveur web Apache. Si vous voyez "Syntax OK" c'est que vous avez bien configuré Apache. Sinon il y a un problème dans votre configuration. Recherchez l'erreur sur internet et corrigez la.
-> httpd -k restart       # Redémarrage du serveur web Apache
+> httpd -t                                            # Check the Apache web server configuration. If you see "Syntax OK" then you have configured Apache correctly. If not there is a problem in your configuration. Look for the error on the internet and correct it.
+> httpd -k restart                                    # Restarting the Apache web server
 ```
-- Pour vérifier que apache fonctionne bien faites Ctrl + shift + echap et allez dans l'onglet services vous devriez voir apache 2.4
+- To verify that apache is running properly do Ctrl + shift + escape and go to the services tab you should see apache 2.4
 
-- Allez dans le répertoire "C:\Apache24\htdocs" (c'est le répertoire où se trouve les fichiers de votre site) et créez un fichier "info.php" avec le contenu suivant :
+- Go to the directory "C:Apache24" (this is the directory where your site files are located) and create a file "info.php" with the following content:
 
 ```php
 <?php
@@ -330,167 +331,164 @@ phpinfo( );
 ?>
 ```
 
-- Enregistrez le fichier et rendez vous sur l'adresse http://localhost:80/info.php pour vérifier l'installation.
+- Save the file and go to http://localhost:80/info.php to verify the installation.
 
-- Vous devriez voir une page comme ceci :
+- You should see a page like this:
 
-![Sélectionner le profile par défault](./images/php_info_page.png)
+![Select default profile](./images/php_info_page.png)
 ___
-### 3.3. Mise en place du backend du launcher
+### 3.3. Setting up the launcher backend
 
-Maintenant que le serveur web est installé et fonctionnel, il faut maintenant installer le backend du launcher. Pour ce faire, rendez vous sur le [la branche web du projet](https://github.com/luuxis/Selvania-Launcher/tree/WEB-Folder). 
+Now that the web server is installed and functional, we must now install the launcher backend. To do this, go to the [the web branch of the project](https://github.com/luuxis/Selvania-Launcher/tree/WEB-Folder). 
 
-- Cliquez sur le bouton "Code" et sur "Download ZIP"
-- Une fois le fichier zip téléchargé, extraitez le fichier zip.
-- Déplacez les dossiers / fichiers "files", "launcher" et ".htaccess" dans le répertoire "C:\Apache24\htdocs" pour windows et dans le répertoire "/var/www/html/" pour linux.
-- Voici le résultat attendu après avoir mis en place le serveur web et avoir accédé à votre site (soit localhost soit l'adresse IP de votre serveur) :
+- Click on the "Code" button and on "Download ZIP".
+- Once the zip file is downloaded, extract the zip file.
+- Move the folders / files "files", "launcher" and ".htaccess" in the directory "C:\Apache24\htdocs" for windows and in the directory "/var/www/html/" for linux.
+- Here is the expected result after having set up the web server and having accessed your site (either localhost or the IP address of your server):
 
-![Sélectionner le profile par défault](./images/serverwebfinal.png)
+![Select default profile](./images/serverwebfinal.png)
 
-Depuis le fichier situé dans le dossier web /launcher/config-launcher/config.json vous allez pouvoir gérer plusieurs paramètres du launcher.
+From the file located in the web folder /launcher/config-launcher/config.json you will be able to manage several launcher parameters.
 
-![Sélectionner le profile par défault](./images/config.png)
+![select default profile](./images/config.png)
 
-- maintenance : `true/false` Cette option permet de désactiver le launcher pour tout le monde en cas de maintenance.
-- maintenance_message : `Désolé le launcher est en maintencance` Cette option permet de définir le message qui sera affiché aux utilisateur du launcher lorsque il est en maintenance.
-- online : `true/false` Cette option permet d'autoriser ou non les comptes cracké à se connecter au launcher.
-- client_id : Cette option permet de définir le client id du microsoft account
-- game_version : `1.19.2` Cette option définit la version du jeu que le launcher va utiliser poour démarrer minecraft.
-- modde : `true/false` Cette option si activée permet de télécharger les fichiers du jeu présent sur le serveur sur le pc de l'utilisateur obligatoire pour proposer un jeu moddé depuis le launcher.
-- verify : `true/false` Cette option indique au launcher si il dois vérifier qu'aucun fichier du jeu n'ai été ajouté, supprimé ou modifié par rapport aux fichiers présents sur le serveur si oui il retéléchargera le jeu peut servir de pseudo anti-cheat
-- java : `true/false` indique si le launcher dois télécharger java depuis les serveurs de mojang, utile pour s'assurer que les utilisateurs du launcher ont un java compatible **Recommandé**
-- game_args : ajouter des arguments personnalisés supplémentaires pour lancer le jeu
-- dataDirectory : `Minecraft`  Cette option permet de définir le répertoire dans lequel votre jeu va se télécharger. Ne pas mettre de point il sera rajouté automatiquement si besoin.
-- ignored : `logs`Cettte option permet de white-list les fichiers qui ne seront pas vérifiés par "vérify".
-- status : Cette section permet de définir quel serveur sera affiché dans le launcher.
-- nameserver : `Craftlaunch Serveur` Cette option permet de définir le nom de serveur qui sera affiché dans le launcher.
-- ip : `123.546.789` Cette option permet de définir l'adresse IP du serveur qui sera affiché dans le launcher.
-- port : `25565` Cette option permet de définir le port du serveur qui sera affiché dans le launcher.
+- maintenance: `true/false` This option allows you to disable the launcher for everyone in case of maintenance.
+- maintenance_message : `Sorry the launcher is under maintenance` This option allows to define the message that will be displayed to the users of the launcher when it is under maintenance.
+- online : `true/false` This option allows to allow or not the cracked accounts to connect to the launcher.
+- client_id : This option allows to define the client id of the microsoft account
+- game_version : `1.19.2` This option defines the version of the game that the launcher will use to start minecraft.
+- modde : `true/false` This option if activated allows to download the game files present on the server on the user's pc mandatory to propose a modded game from the launcher.
+- verify : `true/false` This option tells the launcher if it must verify that no game file has been added, deleted or modified compared to the files present on the server if yes it will re-download the game can be used as a pseudo anti-cheat
+- java : `true/false` indicates if the launcher must download java from mojang servers, useful to make sure that launcher users have a compatible java **Recommended**
+- game_args : add additional custom arguments to launch the game
+- dataDirectory: `Minecraft` This option allows you to define the directory where your game will download. Do not put a dot, it will be added automatically if needed.
+- ignored: `logs` This option allows you to white-list the files that will not be verified by "verify".
+- status: This section allows you to define which server will be displayed in the launcher.
+- nameserver: `Craftlaunch Server` This option allows you to set the server name that will be displayed in the launcher.
+- ip: `123.546.789` This option sets the IP address of the server that will be displayed in the launcher.
+- port: `25565` This option allows you to set the port of the server that will be displayed in the launcher.
 
-Une fois la configuration côté serveur web faite, il faut configurer le launcher pour indiquer l'URL où aller chercher les fichiers sur serveur web. Pour ce faire changez l'url souligné ci-dessous dans le fichier package.json par l'URL de votre serveur web.
+Once the configuration on the web server side done, you have to configure the launcher to indicate the URL where to fetch the files on the web server. To do this change the url underlined below in the file package.json by the URL of your web server.
 
-![Sélectionner le profile par défault](./images/serverpath.png)
+![Select default profile](./images/serverpath.png)
 
 ___
-### 3.4. Démarrage
+### 3.4. Start-up
 
-Bravo ! Si vous êtes arrivé jusqu'ici, vous avez bien installé et configuré tout ce qu'il faut pour pouvoir modifier et utiliser le launcher.
+Well done! If you have reached this point, you have installed and configured everything you need to be able to modify and use the launcher.
 
-Arrivée à cette étape, vous devrez pourvoir executer le launcher en local pour vérifier que votre installation fonctionne.
-Depuis un terminal vous pouvez taper la commande suivante si le launcher se lance bien avec les paramètres entrés sur le serveur web alors tout est bon :
+At this stage you should be able to run the launcher locally to check that your installation is working.
+From a terminal you can type the following command if the launcher launches well with the parameters entered on the web server then all is good:
 
 ```console
 npm run dev
   ```
 
-Si vous souhaiter modifier le launcher, changer les images, les textes, etc vous pouvez désormais le faire !
-A noter que le launcher est une application web donc il faut avoir quelques bases en HTML/CSS pour modifier l'apparence et texte, et avoir des bases en Javascript pour modifier les fonctionnalitées.
+If you want to modify the launcher, change the images, texts, etc. you can now do it!
+Note that the launcher is a web application so you need to have some basic HTML/CSS skills to modify the look and feel, and some Javascript skills to modify the functionality.
 
 ___
-## 4. Compilation
+## 4. Compiling
 
-### 4.1. Préparation
+### 4.1. Preparation
 
-- Avant de compiler le launcher nous allons finir de personnaliser le launcher. Pour ce faire rendez-vous dans le fichier package.json.
+- Before compiling the launcher we will finish customizing the launcher. To do this go to the package.json file.
 
-![Sélectionner le profile par défault](./images/compile.png)
+![Select default profile](./images/compile.png)
 
-Vous pouvez modifier les paramètres soulignés:
-- "name" : nom du launcher
-- "productName" : nom du launcher
-- "version" : version du launcher (⚠️ Pour compiler le launcher il faut mettre une version plus élevé que le tag le plus élevé du projet sur GitHub. Veuillez pour plus de clarifiacation choisir un format de tag sans "v" et avec 3 chiffres Ex: "1.0.0")
-- "description" : description du jeu
-- "author" : auteur du jeu
-- url : lien du github (⚠️ Obligatoire pour l'auto update)
+You can modify the underlined parameters:
+- "name" : name of the launcher
+- "productName" : name of the launcher
+- "version" : version of the launcher (⚠️ To compile the launcher you need to put a version higher than the highest tag of the project on GitHub. Please choose a tag format without "v" and with 3 digits (e.g. "1.0.0") for more clarification
+- "description" : description of the game
+- "author" : author of the game
+- url : link of the github (⚠️ Mandatory for the auto update)
 
-**une fois cela fait penser à faire `npm install` dans la console pour mettre à jour le projet**
+Here is the procedure to retrieve the highest tag from the GitHub project:
 
-Voici la procédure à suivre pour récupérer le tag le plus élevé du projet GitHub :
+- Go to the GitHub project
+- Go to the actions tab and click on the big green button
 
-- Se rendre sur le projet GitHub
-- Aller dans l'onglet actions et cliquer sur le gros bouton vert
+![Select the default profile](./images/understand.png)
 
-![Sélectionner le profile par défault](./images/understand.png)
+- Click on the "Master" button
+- Click on the "tag" button
+- Click on the "View all tags" button
 
-- Cliquez sur le bouton "Master"
-- Cliquez sur le bouton "tag"
-- Cliquez sur le bouton "View all tags"
+![Select default profile](./images/tags.png)
 
-![Sélectionner le profile par défault](./images/tags.png)
+From this menu you can see all the tags of the GitHub project. Find the highest tag and enter a higher number in the "version" variable of the package.json file.
 
-Depuis ce menu vous pouvez voir tous les tags du projet GitHub. Trouvez le tag le plus élevé et entrez un numéto plus éleve le dans la variable "version" du fichier package.json.
+![Select the default profile](./images/tag.png)
 
-![Sélectionner le profile par défault](./images/tag.png)
+Here is the procedure to get the link to put in the "url" variable of the package.json file:
 
-Voici la procédure pour récupérer le lien à mettre dans la variable "url" du fichier package.json :
+- Go to the GitHub project
+- Click on the "Code" button
+- Copy the link at the top of the dropdown menu (see image below)
 
-- Se rendre sur le projet GitHub
-- Cliquez sur le bouton "Code"
-- Copier le lien en haut du menu déroulant (voir image ci-dessous)
-
-![Sélectionner le profile par défault](./images/gitlink.png)
+![Select the default profile](./images/gitlink.png)
 ___
-### 4.2. Compilation
+### 4.2. Compiling
 
-- Se rendre sur le projet GitHub
-- Cliquer sur release
+- Go to the GitHub project
+- Click on release
 
-![Sélectionner le profile par défault](./images/relase.png)
+![Select the default profile](./images/relase.png)
 
-- Cliquer sur "Draft a New release"
+- Click on "Draft a New release
 
-![Sélectionner le profile par défault](./images/draft.png)
+![Select the default profile](./images/draft.png)
 
-- Cliquez sur "Choose tag" puis entrez **le même tag** que celui entré dans le fichier package.json puis cliquez sur "Create new tag"
+- Click on "Choose tag" then enter **the same tag** as the one entered in the package.json file then click on "Create new tag" !
 
-![Sélectionner le profile par défault](./images/createtag.png)
+![Select the default profile](./images/createtag.png)
 
-- Remplir les autres titres puis cliquez sur "Save draft"
+- Fill in the other titles then click on "Save draft" !
 
-![Sélectionner le profile par défault](./images/savedraft.png)
+![Select the default profile](./images/savedraft.png)
 
-- Ouvrez Github Desktop
+- Open Github Desktop
 
-- Dans la liste à goauche (voir screenshot ci-dessous) vous pouvez voir les fichiers modifiés. Pour envoyer les fichiers sur github entrez une dectiption pour la mise a jour dans le champ souligné puis cliquez sur "Commit to main"
+- In the left list (see screenshot below) you can see the modified files. To upload the files to github enter a description for the update in the underlined field and click on "Commit to main".
 
-![Sélectionner le profile par défault](./images/push.png)
+![Select the default profile](./images/push.png)
 
-- Une fois ceci fait cliquez sur "Push origin"
+- Once this is done click on "Push origin" !
 
-![Sélectionner le profile par défault](./images/push2.png)
+![Select default profile](./images/push2.png)
 
-- Après avoir push le projet sur github, vous devriez voir cela c'est github qui compile le launcher.
+- After pushing the project to github, you should see that it is github that compiles the launcher.
 
-![Sélectionner le profile par défault](./images/build.png)
-![Sélectionner le profile par défault](./images/build2.png)
+![Select the default profile](./images/build.png)
+![Select default profile](./images/build2.png)
 
-- Attendez que le processus se termine (les points vont devenir vert)
+- Wait for the process to finish (the dots will turn green)
 
-- Allez dans la page des releases trouvez votre draft cliquez dessus et cliquez sur "Publish release"
+- Go to the releases page, find your draft, click on it and click on "Publish release".
 
-Bien joué ! Vous avez fini de compiler le launcher. Vous pouvez maintenant le télécharger et l'installer sur votre ordinateur depuis l'onglet releases.
+Well done! You have finished compiling the launcher. You can now download and install it on your computer from the releases tab.
 
 ___
 ## 5. Faq
 
 
-### Quelles ont les verions de Minecraft supportées par le launcher ?
+### What are the Minecraft verions supported by the launcher?
 ___
-- Toutes les versions entre la 1.0 et la 1.19.X sont supportées.
+- All versions between 1.0 and 1.19.X are supported.
 
-### Les MCP sont ils supportés ?
+### Are MCPs supported?
 ___
-- Non, le launcher ne supporte pas les MCP.
+- No, the launcher does not support MCPs.
 
-### Le launcher supporte t-il l'autoconnect ?
+### Does the launcher support autoconnect?
 ___
-- Nous sommes contre l'autoconnect nous ne fourniront donc pas de support pour cette fonctionnalité.
-- Nous conseillons en revanche d'utiliser un mod permettant d'ajouter un bouton pour se connecter.
+- We are against autoconnect so we will not provide support for this feature. It is possible to enable it by modifying the game launch arguments in the config on the web server (game_args).
 
-### Pourquoi les news ne marchent pas ?
+### Why doesn't the news work?
 ___
 
-- Les news sont actuellement et cours de redéveloppement c'est pour cela qu'elles ne sont pas disponibles pour le moment par ailleurs il est possible de les activer pour ce faire : créer un dossier "news-launcher" dans le même répertoire que "config-launcher" sur le serveur web. Ensuite créez un fichier "news.json" puis completer le contenu du fichier avec les informations suivantes :
+- The news are currently under redevelopment that's why they are not available for the moment. It is possible to activate them : create a folder "news-launcher" in the same directory as "config-launcher" on the web server. Then create a file "news.json" and complete the content of the file with the following information:
 
 ```json
 [
@@ -504,53 +502,53 @@ ___
     }
 ]
 ```
-### Comment mettre forge sur le launcher ?
+### How to put forge on the launcher?
 ___
 
-- Allez sur le [site de forge](https://files.minecraftforge.net/net/minecraftforge/forge/) pour télécharger la version de forge correspondante à la version de Minecraft que vous utilisez.
+- Go to the [forge site](https://files.minecraftforge.net/net/minecraftforge/forge/) to download the version of forge corresponding to the version of Minecraft you are using.
 
-- Allez dans votre serveur web puis allez dans "files/files" (Pas le dossier avec un fichier php mais celui encore en dessous) et créez un fichier "launcher_profiles.json" vide.
+- Go to your web server then go to "files/files" (not the folder with a php file but the one below) and create an empty "launcher_profiles.json" file.
 
-- Exécutez le programme d'installation de Forge et installez dans le même répertoire que le fichier "launcher_profiles.json" tout en choisissant "install client" puis cliquez sur "Ok"
+- Run the Forge installer and install in the same directory as the "launcher_profiles.json" file while choosing "install client" then click "Ok".
 
-![Sélectionner le profile par défault](./images/installforge.png)
+![Select the default profile](./images/installforge.png)
 
-- Bravo ! plus qu'a créer un dossier mods là ou vous avez installer forge (dans votre serveur web) pour mettre les mods que vous souhaitez et les fichiers que vous souhaitez.
+- Well done ! just create a mods folder where you have installed forge (in your web server) to put the mods you want and the files you want.
 
-### Comment mettre fabric sur le launcher ?
+### How to put fabric on the launcher ?
 ___
 
-- Allez sur le [site de Fabric](https://fabricmc.net/use/installer/) pour télécharger la dernière version de Fabric.
+- Go to the [Fabric website](https://fabricmc.net/use/installer/) to download the latest version of Fabric.
 
-![Sélectionner le profile par défault](./images/fabricdownload.png)
+![Select default profile](./images/fabricdownload.png)
 
-- Allez dans votre serveur web puis allez dans "files/files" (Pas le dossier avec un fichier php mais celui encore en dessous) et créez un fichier "launcher_profiles.json" vide.
+- Go to your web server then go to "files/files" (Not the folder with a php file but the one below) and create an empty "launcher_profiles.json" file.
 
-- Exécutez le programme d'installation de Fabric et installez dans le même répertoire que le fichier "launcher_profiles.json" tout en choisissant votre version de minecraft désirée puis cliquez sur "Installer"
+- Run the Fabric installer and install in the same directory as the "launcher_profiles.json" file while choosing your desired minecraft version then click "Install".
 
-![Sélectionner le profile par défault](./images/fabricinstall.png)
+![Select default profile](./images/fabricinstall.png)
 
-- Bravo ! plus qu'a créer un dossier mods là ou vous avez installer fabric (dans votre serveur web) pour mettre les mods que vous souhaitez et les fichiers que vous souhaitez.
+- Well done ! just create a mods folder where you have installed fabric (in your web server) to put the mods you want and the files you want.
 ___
 
-## Pour en savoir + :
+## To know more :
 
-Vous pouvez visionner les vidéos de Luuxis si vous voulez plus de précisions 
+You can watch the Luuxis videos if you want more details (Only in French)
 
-- [Tuto #1 Créer un launch sur Minecraft Node.JS (mise en place du projet)](https://www.youtube.com/watch?v=0lFKwP0ymsA)
+- [Tuto #1 Create a launch on Minecraft Node.JS (project setup)](https://www.youtube.com/watch?v=0lFKwP0ymsA)
 
-- [Tuto #2 Créer un launch sur Minecraft Node.JS (Approfondissement)](https://www.youtube.com/watch?v=czDgRHznk3Q) 
+- [Tuto #2 Creating a launch on Minecraft Node.JS (Deepening)](https://www.youtube.com/watch?v=czDgRHznk3Q) 
 
-- Tuto #3 ❌ En cours
+- Tuto #3 ❌ In progress
 
-Comment Faire un Port forwarding ?
+How to make a port forwarding ? (Only in French)
 
-- [Ouvrir les ports de sa box/routeur facilement](https://www.youtube.com/watch?v=qp7Jgj0FSnk&t=132s&ab_channel=Nathol)
+- [Open the ports of your box/router easily](https://www.youtube.com/watch?v=qp7Jgj0FSnk&t=132s&ab_channel=Nathol)
 ___
-Si vous aimez ce projet et que vous voulez aider à le développer, vous pouvez nous faire un don sur [Paypal](
-https://www.paypal.me/luuxiss )
+If you like this project and want to help us develop it, you can make a donation on [Paypal](
+https://www.paypal.me/luuxiss)
 
-Si vous avez des questions, un problème ou des suggestions n'hésitez pas à rejoindre notre discord :
+If you have any questions, problems or suggestions please feel free to join our discord:
 
 <br>
 
@@ -560,4 +558,4 @@ Si vous avez des questions, un problème ou des suggestions n'hésitez pas à re
 <br>
 <br>
 
-[<p align="center">]() *Wiki réalisé par [@Fefe_du_973](https://github.com/Fefedu973)*  </p>
+[<p align="center">]() *Wiki by [@Fefe_du_973](https://github.com/Fefedu973)* </p>

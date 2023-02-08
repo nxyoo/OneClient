@@ -33,16 +33,16 @@ class Home {
                 let blockNews = document.createElement('div');
                 blockNews.classList.add('news-block', 'opacity-1');
                 blockNews.innerHTML = `
-                    <div class="news-header">
-                        <div class="header-text">
-                            <div class="title">Aucun news n'ai actuellement disponible.</div>
-                        </div>
-                    </div>
-                    <div class="news-content">
-                        <div class="bbWrapper">
-                            <p>Vous pourrez suivre ici toutes les news relative au serveur.</p>
-                        </div>
-                    </div>`
+                <div class="news-header">
+                <div class="header-text">
+                    <div class="title">No news currently available.</div>
+                </div>
+            </div>
+            <div class="news-content">
+                <div class="bbWrapper">
+                    <p>You can follow all the news related to the server here.</p>
+                </div>
+            </div>`
                 news.appendChild(blockNews);
             } else {
                 for (let News of this.news) {
@@ -50,21 +50,21 @@ class Home {
                     let blockNews = document.createElement('div');
                     blockNews.classList.add('news-block');
                     blockNews.innerHTML = `
-                        <div class="news-header">
-                            <div class="header-text">
-                                <div class="title">${News.title}</div>
-                            </div>
-                            <div class="date">
-                                <div class="day">${date.day}</div>
-                                <div class="month">${date.month}</div>
-                            </div>
-                        </div>
-                        <div class="news-content">
-                            <div class="bbWrapper">
-                                <p>${News.content.replace(/\n/g, '</br>')}</p>
-                                <p class="news-author">Auteur,<span> ${News.author}</span></p>
-                            </div>
-                        </div>`
+                    <div class="news-header">
+                    <div class="header-text">
+                        <div class="title">${News.title}</div>
+                    </div>
+                    <div class="date">
+                        <div class="day">${date.day}</div>
+                        <div class="month">${date.month}</div>
+                    </div>
+                </div>
+                <div class="news-content">
+                    <div class="bbWrapper">
+                        <p>${News.content.replace(/\n/g, '</br>')}</p>
+                        <p class="news-author">Author,<span>${News.author}</span></p>
+                    </div>
+                </div>`
                     news.appendChild(blockNews);
                 }
             }
@@ -72,16 +72,16 @@ class Home {
             let blockNews = document.createElement('div');
             blockNews.classList.add('news-block', 'opacity-1');
             blockNews.innerHTML = `
-                <div class="news-header">
-                    <div class="header-text">
-                        <div class="title">Error.</div>
-                    </div>
-                </div>
-                <div class="news-content">
-                    <div class="bbWrapper">
-                        <p>Impossible de contacter le serveur des news.</br>Merci de vérifier votre configuration.</p>
-                    </div>
-                </div>`
+            <div class="news-header">
+            <div class="header-text">
+                <div class="title">Error.</div>
+            </div>
+        </div>
+        <div class="news-content">
+            <div class="bbWrapper">
+                <p>Failed to contact the news server.</br>Please check your configuration.</p>
+            </div>
+        </div>`
             // news.appendChild(blockNews);
         }
     }
@@ -144,7 +144,7 @@ class Home {
 
             launch.on('progress', (progress, size) => {
                 progressBar.style.display = "block"
-                document.querySelector(".text-download").innerHTML = `Téléchargement ${((progress / size) * 100).toFixed(0)}%`
+                document.querySelector(".text-download").innerHTML = `Downloading ${((progress / size) * 100).toFixed(0)}%`
                 ipcRenderer.send('main-window-progress', { progress, size })
                 progressBar.value = progress;
                 progressBar.max = size;
@@ -152,7 +152,7 @@ class Home {
 
             launch.on('check', (progress, size) => {
                 progressBar.style.display = "block"
-                document.querySelector(".text-download").innerHTML = `Vérification ${((progress / size) * 100).toFixed(0)}%`
+                document.querySelector(".text-download").innerHTML = `Verification ${((progress / size) * 100).toFixed(0)}%`
                 progressBar.value = progress;
                 progressBar.max = size;
             });
@@ -170,7 +170,7 @@ class Home {
 
             launch.on('patch', patch => {
                 console.log(patch);
-                info.innerHTML = `Patch en cours...`
+                info.innerHTML = `Patch in progress...`
             });
 
             launch.on('data', (e) => {
@@ -178,7 +178,7 @@ class Home {
                 if (launcherSettings.launcher.close === 'close-launcher') ipcRenderer.send("main-window-hide");
                 ipcRenderer.send('main-window-progress-reset')
                 progressBar.style.display = "none"
-                info.innerHTML = `Demarrage en cours...`
+                info.innerHTML = `Starting up...`
                 console.log(e);
             })
 
@@ -187,7 +187,7 @@ class Home {
                 progressBar.style.display = "none"
                 info.style.display = "none"
                 playBtn.style.display = "block"
-                info.innerHTML = `Vérification`
+                info.innerHTML = `Verification`
                 new logger('Launcher', '#7289da');
                 console.log('Close');
             });
@@ -207,12 +207,12 @@ class Home {
 
         if (!serverPing.error) {
             nameServer.textContent = this.config.status.nameServer;
-            serverMs.innerHTML = `<span class="green">En ligne</span> - ${serverPing.ms}ms`;
+            serverMs.innerHTML = `<span class="green">Online</span> - ${serverPing.ms}ms`;
             online.classList.toggle("off");
             playersConnected.textContent = serverPing.playersConnect;
         } else if (serverPing.error) {
-            nameServer.textContent = 'Serveur indisponible';
-            serverMs.innerHTML = `<span class="red">Hors ligne</span>`;
+            nameServer.textContent = 'Hypixel';
+            serverMs.innerHTML = `<span class="red">Offline</span>`;
         }
     }
 

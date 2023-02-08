@@ -16,11 +16,14 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: transparent;
-    width: 50px;
-    height: 50px;
+    width: 174px;
+    height: 422px;
     border: none;
     border-radius: 15px;
     transition: all 0.5s cubic-bezier(1, 0.46, 0, 1.29);
+    margin-top: -509px;
+    position: absolute;
+    right: 0;
 }
 
 .player-head:hover {
@@ -54,7 +57,7 @@
     transform: translate(-50%);
     height: 100%;
     color: #F1F1F1;
-    font: normal normal bold 19px/29px Poppins;
+    font: normal normal bold 19px/29px Poppins;rd
     text-align: center;
 }
 
@@ -64,11 +67,11 @@
     height: 37px;
     border-radius: 20px;
     border: none;
-    background: #00bd7a;
+    background: #00bdbd;
     font: normal normal bold 20px/25px Poppins;
     color: #121212;
     margin: 15px 0;
-    box-shadow: 0 0 5px #00bd7a;
+    box-shadow: 0 0 5px #00bdbd;
 }
 
 .download-content {
@@ -98,7 +101,7 @@
 }
 
 .progress-bar::-webkit-progress-value {
-    background-color: #00bd7a;
+    background-color: #00bdbd;
     border-radius: 10px;
 }
 
@@ -239,10 +242,11 @@
 
 .server-img {
     position: absolute;
-    width: 42px;
-    height: 45px;
+    width: 45;
+    height: 45;
     top: 15px;
     left: 15px;
+    border-radius: 8px;
 }
 
 .name {
